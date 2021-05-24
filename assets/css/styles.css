@@ -19,13 +19,23 @@
  }
 
  @media (max-width: 1140px){
+    .header{
+        padding: 30px 0 0 0 !important;
+    }
+    #about{
+        margin-top: 40px !important;
+    }
+
+    #howToBuy{
+        margin-top: 0 !important;
+    }
     .stats-list .col-lg-6{
         border-width: 0 0px 1px 0px !important;
     }
 
     .stats-list .stats-item{
         margin: 50px 0 !important;
-        
+        text-align: center;
         display: flex !important;
         flex-direction: column !important;
         justify-content: space-between !important;
@@ -42,6 +52,10 @@
 
     .text-24-bold{
         font-size: 18px !important;
+    }
+
+    .text-24-bold-sk{
+        font-size: 16px !important;
     }
     .stats-list{
         padding: 0 80px !important;
@@ -81,7 +95,7 @@
         text-align: center !important;
     }
     #howToBuy .wallet-img{
-        height: 195.97px !important;
+        height: 252.04px !important;
         padding: 0 30px 15px 30px !important;
     }
 
@@ -127,8 +141,15 @@
         height: 23px !important;
     }
 
-    .what-list .col-12{
+    #stats{
+        padding: 32px 15px !important;
+    }
+    .d-go-down{
+        height: 150px !important;
+    }
 
+    .b-go-down{
+        margin-top: 40px !important;
     }
 }
 
@@ -270,11 +291,11 @@
 }
 
 .sub-1{
-    margin-top: 35px;
+    margin-top: 24px;
 }
 
 .button-demo{
-    margin: 44px 0;
+    margin: 24px 0;
 }
 
 .menu .nav-link{
@@ -336,6 +357,9 @@
     object-fit: cover;
 }
 
+.d-go-down{
+    height: 200px;
+}
 
 .b-go-down {
     border: 2px solid transparent;
@@ -345,35 +369,18 @@
     font-size: 14px;
     font-weight: 600;
     position: absolute;
-    animation-name: bGoDown;
-    animation-duration: 2s;
+    margin-top: 90px;
+    /* animation-name: bGoDown;
+    visibility: visible;
+    transition: all 0.5s ease 0s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-out; */
 }
 
 
 @keyframes bGoDown {
-    0% {margin-top: 90px;}
-    5% {margin-top: 91px;}
-    10% {margin-top: 92px;}
-    15% {margin-top: 93px;}
-    20% {margin-top: 94px;}
-    25% {margin-top: 95px;}
-    30% {margin-top: 96px;}
-    35% {margin-top: 97px;}
-    40% {margin-top: 98px;}
-    45% {margin-top: 99px;}
-    50% {margin-top: 100px;}
-    55% {margin-top: 99px;}
-    60% {margin-top: 98px;}
-    65% {margin-top: 97px;}
-    70% {margin-top: 96px;}
-    75% {margin-top: 95px;}
-    80% {margin-top: 94px;}
-    85% {margin-top: 93px;}
-    90% {margin-top: 92px;}
-    95% {margin-top: 91px;}
-    100% {margin-top: 90px;}
+    from {margin-top: 21px}
+    to {margin-top: 26px}  
 }
 
 
@@ -759,11 +766,9 @@
     height: 16px;
 }
 
-.menu-responsive{ 
-    background-image: url('../images/bg-responsive.png');
-}
-
 .menu-responsive{
+    background-image: url('../images/bg-responsive.png');
+    padding: 5px 20px 0 30px;
     visibility: visible;
   transition: all 0.5s ease 0s;
     position: fixed;
@@ -781,4 +786,8 @@
 
 #owl-what-list .owl-stage-outer{
     padding: 40px 0;
+}
+
+.header{
+    padding: 30px 0;
 }
