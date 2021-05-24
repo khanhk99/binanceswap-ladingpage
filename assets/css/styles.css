@@ -169,6 +169,10 @@
     #roadmap .description{
         margin-bottom: -24px !important;
     }
+
+    .binance{
+        background-image: url('../images/Bg\ mobile\ 1.png') !important;
+    }
 }
 
 @media (max-width: 850px){
@@ -194,7 +198,7 @@
   }
 
  .binance {
-    background-image: url('../images/bg-main.png') !important;
+    background-image: url('../images/bg-main.png');
     background-size: 100% 100%;
     font-family: poppin-regular;
  }
