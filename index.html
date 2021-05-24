@@ -9,9 +9,43 @@
     <link rel="stylesheet" href="assets/lib/bootstrap-4.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/lib/fontawesome-free-5.15.3/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/lib/OwlCarousel2-2.3.4/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/lib/OwlCarousel2-2.3.4/owl.theme.default.min.css">
 </head>
 
 <body>
+    <div class="menu menu-responsive py-4">
+        <div class="container">
+            <div class="d-flex my-4 justify-content-between align-items-center">
+                <div class="logo d-flex align-items-center">
+                    <img class="" src="assets/images/Logo.png">
+                </div>
+                <a href="javascript:void(0)" class="icon-menu-res icon-menu-res-close" onclick="closeMenu()">
+                    <img src="assets/images/Group 2.png">
+                
+                </a>
+            </div>
+            <div>
+                <ul class="nav text-18-bold" id="topMenu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#howToBuy">How to buy?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stats">Stats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#roadmap">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#community">Community</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="header py-5">
         <div class="container">
             <div class="menu d-flex justify-content-between align-items-center">
@@ -19,8 +53,8 @@
                     <img class="" src="assets/images/Logo.png">
                 </div>
                 <!-- menu -->
-                <div class="text-14-bold">
-                    <ul class="nav justify-content-end">
+                <div class="text-14-bold top-menu">
+                    <ul class="nav justify-content-end" id="topMenu">
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
                         </li>
@@ -37,10 +71,15 @@
                             <a class="nav-link" href="#community">Community</a>
                         </li>
                     </ul>
+
                 </div>
+                <a href="javascript:void(0)" class="icon-menu-res icon-menu-res-open" onclick="openMenu()">
+                    <img src="assets/images/Group 32.png">
+            
+                </a>
             </div>
             <div class="banner text-center">
-                <div class="text-80-bold-sk my-4">
+                <div class="text-90-bold-sk my-4">
                     <div>
                         Decentralized
                     </div>
@@ -48,10 +87,10 @@
                         Trading Protocol
                     </div>
                 </div>
-                <div class="text-14-53">
+                <div class="text-16-53 mt-5 sub-1">
                     Guaranteed liquidity for millions of users and thousands of Binance Smart Chain applications.
                 </div>
-                <div class="my-5">
+                <div class="button-demo">
                     <button class="b-buy-bnsc mr-2 btn">Buy BNSC token</button>
                     <button class="b-eth-demo ml-2 btn">
                         <div class="text-14">ETH demo</div>
@@ -65,30 +104,37 @@
                     <img class="noise" src="assets/images/Noise.png">
                 </div>
                 <div style="height: 200px;" class="d-flex justify-content-center">
-                    <button class="b-go-down btn rounded-circle" onclick="location.href='#about'"><i class="fas fa-arrow-down"></i></button>
+                    <button class="b-go-down btn rounded-circle" onclick="location.href='#about'"><i
+                            class="fas fa-arrow-down"></i></button>
                 </div>
             </div>
         </div>
     </div>
     <div class="main">
-        <div class="pt-5">
+        <div class="">
             <div class="container">
                 <div class="mb-5">
                     <div class="text-24-bold-sk text-center mb-5">Trusted by big brands in the industry</div>
                     <div class="brand mt-2 d-flex justify-content-lg-between align-items-center">
-                        <img src="assets/images/logo-bitcoin.png">
-                        <img src="assets/images/logo-eth.png">
-                        <img src="assets/images/logo-binance.png">
-                        <img src="assets/images/logo-uniswap.png">
-                        <img src="assets/images/logo-pancake.png">
+                        <div id="owl-brand" class="owl-carousel">
+                            <img src="assets/images/logo-bitcoin.png">
+
+                            <img src="assets/images/logo-eth.png">
+
+                            <img src="assets/images/logo-binance.png">
+
+                            <img src="assets/images/logo-uniswap.png">
+
+                            <img src="assets/images/logo-pancake.png">
+                        </div>
                     </div>
                 </div>
                 <div id="about" class="">
-                    <div class="text-36-bold-sk text-center my-5 px-2 pb-2">
+                    <div class="text-36-bold-sk text-center mt-5 mb-1 px-2 pb-2">
                         What is BNSC token?
                     </div>
                     <div class="row what-list">
-                        <div class="col-md-4">
+                        <div id="owl-what-list" class="owl-carousel">
                             <div
                                 class="what-list-item d-flex flex-column justify-content-between align-items-center text-center shadow">
                                 <div class="what-list-logo community">
@@ -102,8 +148,7 @@
                                     perspectives to build BNSC into the best community in crypto.
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
+
                             <div
                                 class="what-list-item d-flex flex-column justify-content-between align-items-center text-center shadow">
                                 <div class="what-list-logo instant">
@@ -118,8 +163,7 @@
                                     wallet.
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
+
                             <div
                                 class="what-list-item d-flex flex-column justify-content-between align-items-center text-center shadow">
                                 <div class="what-list-logo secure">
@@ -129,9 +173,11 @@
                                     Secure & Safe
                                 </div>
                                 <div class="text-14-53">
-                                    BNSC has been <a href="#" class="link-color-blue">audited</a> and its LP (Liquidity Pool) tokens have been burnt. That means
+                                    BNSC has been <a href="#" class="link-color-blue">audited</a> and its LP (Liquidity
+                                    Pool) tokens have been burnt. That means
                                     zero risk to our investors from potential bad actors.
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -142,7 +188,7 @@
                             <div class="text-60-bold-sk">
                                 How to buy BNSC token?
                             </div>
-                            <div class="text-18 mr-5 pr-5">
+                            <div class="text-18">
                                 Follow these steps or join our <a href="#" class="link-color-orange">Telegram</a> group
                                 if you need help.
                             </div>
@@ -284,18 +330,17 @@
         </div>
         <div id="roadmap">
             <div class="container text-center">
-                <div class="text-36-bold-sk my-4">
+                <div class="text-36-bold-sk mt-4">
                     Roadmap
                 </div>
-                <div class="text-14-53">
+
+                <div class="text-14-53 description">
                     BinanSwap is going to launch on late 2021 and will quickly become one of the fastest growing
                     cryptocurrencies.
-                </div>
-                <div class="text-14-53 mb-3">
                     This Roadmap is a breathing document that lays out key milestones we plan to hit to continue our
                     rapid growth.
                 </div>
-                <div class="phase-list row my-5">
+                <div class="phase-list row">
                     <div class="col-md-3 col-12 phase-1">
                         <div class="phase-item-doing phase-hidden">
                             <img src="assets/images/Logo-single.png"> <span class="text-12">We're here</span>
@@ -401,11 +446,11 @@
         <div id="community">
             <div class="container text-center">
                 <div class="text-36-bold-sk">Global community</div>
-                <div class="text-14-53 mt-4 mb-5 community-des">
+                <div class="text-14-53 description">
                     Learn more about BinanSwap, chat with the team, others in the community and have your say in
                     shaping the future of the BinanSwap protocol.
                 </div>
-                <div class="d-flex justify-content-center">
+                <div class="community-list d-flex justify-content-center">
                     <div class="community-item">
                         <div class="community-item-logo">
                             <i class="fab fa-twitter"></i>
@@ -437,7 +482,7 @@
     <div class="line-end"></div>
     <div class="footer">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="footer-content d-flex justify-content-between align-items-center">
                 <div class="text-14-53">Copyright © 2021 BinanSwap</div>
                 <div class="text-14-53">admin@binanswap.finance</div>
             </div>
@@ -446,7 +491,62 @@
 </body>
 <!-- script -->
 <script src="assets/lib/jquery-3.6.0.min.js"></script>
+<script src="assets/lib/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
 <script src="assets/lib/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
 <script src="assets/lib/bootstrap-4.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $("#owl-brand").owlCarousel({
+            margin: 50,
+            responsive: {
+                0: {
+                    items: 3,
+
+                },
+                600: {
+                    items: 3,
+
+                },
+                1000: {
+                    items: 4,
+
+                },
+                1200: {
+                    items: 5,
+                },
+            }
+        });
+
+        $("#owl-what-list").owlCarousel({
+            margin: 50,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                200: {
+                    items: 1,
+                    stagePadding: 60
+                },
+                600: {
+                    items: 2,
+                    stagePadding: 70
+                },
+                1200: {
+                    items: 3,
+                    stagePadding: 10
+                },
+            }
+        });
+    });
+
+    function openMenu(){
+        $('.menu-responsive').addClass('active');
+    }
+
+    function closeMenu(){
+        $('.menu-responsive').removeClass('active');
+    }
+</script>
 
 </html>
