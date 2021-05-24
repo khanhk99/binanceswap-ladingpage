@@ -91,6 +91,7 @@
     }
     #howToBuy .wallet-img{
         height: 252.04px !important;
+        width: 108% !important;
         padding: 0 30px 15px 30px !important;
     }
 
@@ -184,9 +185,7 @@
         display: none !important;
     }
 }
-@media (max-width: 720px){
 
-}
 
  .binance .container{
     padding-right: 32px;
@@ -832,4 +831,8 @@
 
 .b-buy-bnsc:hover, .b-eth-demo:hover, .b-bsc-demo:hover{
   transform: scale(1.025);
+}
+
+.phase-item-doing{
+    margin-bottom: 10px;
 }
