@@ -29,19 +29,11 @@
     #howToBuy{
         margin-top: 0 !important;
     }
-    .stats-list .col-lg-6{
+    .stats-list .col-12{
         border-width: 0 0px 1px 0px !important;
     }
 
-    .stats-list .stats-item{
-        margin: 50px 0 !important;
-        text-align: center;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        float: none !important;
-    }
+   
  }
  
  @media (max-width: 540px){
@@ -58,7 +50,7 @@
         font-size: 16px !important;
     }
     .stats-list{
-        padding: 0 80px !important;
+        padding: 0 32px !important;
     }
 
     .text-90-bold-sk{
@@ -68,14 +60,17 @@
 
     .b-buy-bnsc{
         width: 100%;
+        font-weight: 600;
     }
 
     .b-eth-demo{
+        font-weight: 600;
         width: 100%;
         margin: 16px 0 !important;
     }
 
     .b-bsc-demo{
+        font-weight: 600;
         width: 100%;
         margin: 0 0 !important;
     }
@@ -117,7 +112,7 @@
 
     .phase-1, .phase-2, .phase-3{
         padding: 40px 20px !important;
-        border-bottom: 1px solid #DEDEDE;
+        border-bottom: 1px solid rgba(222, 222, 222, 0.6);
     }
 
     #community {
@@ -142,7 +137,7 @@
     }
 
     #stats{
-        padding: 32px 15px !important;
+        padding: 32px 15px 16px 15px !important;
     }
     .d-go-down{
         height: 150px !important;
@@ -150,6 +145,29 @@
 
     .b-go-down{
         margin-top: 40px !important;
+    }
+
+    body{
+        background-image: url('../images/Bg\ mobile.png') !important;
+        background-size: 100% 100%;
+    }
+
+    .stats-item-last{
+        border: none !important;
+    }
+
+    .stats-list .stats-item{
+        margin: 32px 0 !important;
+        text-align: center;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        float: none !important;
+    }
+
+    #roadmap .description{
+        margin-bottom: -24px !important;
     }
 }
 
@@ -162,12 +180,22 @@
         display: none !important;
     }
 }
- 
+@media (max-width: 720px){
+
+}
+
+ .binance .container{
+    padding-right: 32px;
+    padding-left: 32px;
+ }
+
  html {
     scroll-behavior: smooth;
   }
 
- body {
+ .binance {
+    background-image: url('../images/bg-main.png') !important;
+    background-size: 100% 100%;
     font-family: poppin-regular;
  }
 
@@ -212,7 +240,7 @@
 .text-18-bold{
     color: #161616;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     font-family: poppin-bold;
 }
 
@@ -244,12 +272,14 @@
     color: #161616;
     font-family: sk-modernist-bold;
     font-size: 36px;
+    line-height: 40px;
 }
 
 .text-60-bold-sk{
     color: #161616;
     font-family: sk-modernist-bold;
     font-size: 60px;
+    line-height: 70px;
 }
 
 .text-90-bold-sk{
@@ -307,7 +337,7 @@
 }
 
 .b-buy-bnsc{
-    background: linear-gradient(94.98deg, #FFDC99 -42.62%, #FF8094 53.85%, #2FA8FF 157.42%);
+    background: linear-gradient(95.65deg, #FFDC99 -41.9%, #F45F77 58.74%, #7B71ED 155.95%);
     border-radius: 30px;
     padding: 16px 24px;
     color: #ffffff;
@@ -319,9 +349,10 @@
 .b-eth-demo {
     border: 2px solid transparent;
     border-radius: 30px;
-    background: linear-gradient(90deg, rgb(252, 217, 130), rgb(255, 78, 106), rgba(87, 173, 255, 1));
+    background: linear-gradient(97.43deg, #FCD982 -8.05%, #FF4E6A 53.52%, #57ADFF 104.53%);
+    
     background-clip: padding-box;
-    padding: 1px;
+    padding: 1px 1.25px;
     font-size: 14px;
     font-weight: 600;
 }
@@ -335,9 +366,9 @@
 .b-bsc-demo {
     border: 2px solid transparent;
     border-radius: 30px;
-    background: linear-gradient(90deg, rgb(252, 217, 130), rgb(255, 78, 106), rgba(87, 173, 255, 1));
+    background: linear-gradient(97.43deg, #FCD982 -8.05%, #FF4E6A 53.52%, #57ADFF 104.53%);
     background-clip: padding-box;
-    padding: 1px;
+    padding: 1px 1.25px;
     font-size: 14px;
     font-weight: 600;
 }
@@ -363,7 +394,7 @@
 
 .b-go-down {
     border: 2px solid transparent;
-    background: linear-gradient(90deg, rgb(252, 217, 130), rgb(255, 78, 106), rgba(87, 173, 255, 1));
+    background: linear-gradient(97.43deg, #FCD982 -8.05%, #FF4E6A 53.52%, #57ADFF 104.53%);
     background-clip: padding-box;
     padding: 2px;
     font-size: 14px;
@@ -402,10 +433,6 @@
     
 }
 
-.header{
-    background-image: url('../images/BG\ header.png');
-    background-size: 100% 100%;
-}
 
 .noise{
     position: absolute;
@@ -414,24 +441,23 @@
 
 .brand img{
     width: 143.98px;
-    height: 30.04px;
+    height: 36.04px;
 }
 
 #about{
     margin-top: 100px;
 }
 
-.main{
-    background-image: url('../images/bg-main.png');
+.what-list-item{
+    height: 356px;
+    background: #fff;
+    box-shadow: 0px 8px 28px -12px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    padding: 48px 24px;
 }
 
-.what-list-item{
-    background: #fff;
-    max-height: 500px;
-    min-height: 390px;
-    box-shadow: 0px 8px 48px -12px rgba(0, 0, 0, 0.15);
-    border-radius: 30px;
-    padding: 60px 30px;
+.what-list-title{
+    margin: 32px 0 16px 0;
 }
 
 .what-list-logo{
@@ -474,8 +500,8 @@
 }
 
 #howToBuy .wallet-img{
-    width: 100%;
-    height: 370.14px;
+    width: 90%;
+    height: 330.14px;
 }
 
 #stats{
@@ -496,10 +522,10 @@
 }
 
 .stats-list{
-    padding: 0 120px;
+    padding: 70px 120px 0 120px;
 }
 
-.stats-list .col{
+.stats-list .col-12{
     border-color: rgba(255, 255, 255, 0.8);
     border-style: solid;
 }
@@ -529,7 +555,7 @@
 }
 
 .stats-list .stats-item-ct{
-    margin-left: 15%;
+    margin-left: 25%;
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -555,7 +581,7 @@
 }
 
 .stats-list .stats-item-cb{
-    margin-left: 15%;
+    margin-left: 25%;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -662,7 +688,7 @@
 
 .community-item{
     background: #FFFFFF;
-    box-shadow: 0px 8px 48px -12px rgb(0 0 0 / 15%);
+    
     border-radius: 30px;
     padding: 40px 16px;
     margin: 0 16px;
@@ -672,7 +698,7 @@
 }
 
 .community-item:hover{
-    border: 2px solid rgb(0 0 0 / 15%);
+    box-shadow: 0px 8px 48px -12px rgb(0 0 0 / 15%);
 }
 
 .community-item-logo{
@@ -701,7 +727,7 @@
 
 .footer{
     padding: 41px 0;
-    background-image: url('../images/bg-main.png');
+
 }
 
 .stats-logo .g-26{
@@ -730,7 +756,7 @@
 }
 
 .description{
-    margin: 0 160px 50px 160px;
+    margin: 24px 160px 50px 160px;
 }
 
 .what-list-item .text-24-bold{
@@ -790,4 +816,16 @@
 
 .header{
     padding: 30px 0;
+}
+
+.top-menu{
+    font-weight: 600;
+}
+
+.menu-responsive a{
+    font-weight: 600;
+}
+
+.b-buy-bnsc:hover, .b-eth-demo:hover, .b-bsc-demo:hover{
+  transform: scale(1.025);
 }
